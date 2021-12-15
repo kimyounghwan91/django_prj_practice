@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>사람찾기</title>
+</head>
+<body>
+    <h1>사람찾기 사이트</h1>
+
+
+    {% for m in members %}
+        <hr/>
+        <h2>{{m.name}}</h2>
+        <h4>{{m.email}}</h4>
+    {% endfor %}
+</body>
+</html>

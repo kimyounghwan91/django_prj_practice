@@ -1,0 +1,15 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>사람찾기</title>
+    </head>
+    <body>
+    <h1>사람찾기</h1>
+        {% for m in members %}
+            <hr/>
+            <h2><a href = "{{m.get_absolute_url}}">{{m.name}}</a></h2>
+            <h4>{{m.email}}</h4>
+
+        {% endfor %}
+    </html>
